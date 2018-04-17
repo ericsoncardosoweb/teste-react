@@ -4,7 +4,7 @@ const NotFound = (props) => {
   return (
     <div className="page-404">
       <h1>404!</h1>
-      Route not found :/
+      Página não encontrada
     </div>
   );
 }

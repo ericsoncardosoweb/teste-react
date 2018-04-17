@@ -13,7 +13,7 @@ const routes = (
   <Router history={browserHistory}>
     <Route path='/' component={ App }>
       <IndexRoute component={ Home }/>
-      <Route path='home' component={ Home } />
+      <Route path='/' component={ Home } />
       <Route path='*' component={NotFound}/>
     </Route>
   </Router>
