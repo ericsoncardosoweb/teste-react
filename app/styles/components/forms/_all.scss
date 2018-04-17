@@ -1,0 +1,21 @@
+/* Forms */
+@include form_fields() {
+  border: 1px solid #FFF;
+  background: #FFF;
+  padding: 0.8rem 1.2rem;
+  margin-bottom: 15px;
+  width: 100%;
+  transition: all 0.5s;
+  outline: none;
+  font-size: em(14);
+
+  &:focus{
+    border-color: palette(brand, primary);
+    box-shadow: none;
+    outline: none;
+  }
+
+  @include placeholder{
+    color: palette(text, ice);
+  }
+}

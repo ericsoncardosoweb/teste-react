@@ -1,0 +1,156 @@
+body {
+  font-family: $font-text;
+  font-size: $font-size;
+  line-height: $font-lh;
+  font-weight: $font-w;
+  -ms-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: palette(text, default);
+  background: $bg-body;
+}
+
+p{
+  margin: 0 0 30px;
+  line-height: 1.4; 
+}
+
+address{
+  font-size: 14px;
+  line-height: 30px;
+  color: palette(text, light);
+  font-style: normal;
+  margin-bottom: 5px;
+}
+
+article, .article{
+  font-size: 16px;
+  line-height: 1.5;
+  line-height: 36px;
+ 
+  p{
+    margin-bottom: 30px;
+    display: inline-block;
+    width: 100%;
+  } 
+
+  h1{
+    color: palette(brand, primary);
+    font-size: 32px;
+    line-height: 1.24;
+    display: inline-block;
+    width: 100%;
+  }
+
+  h2{
+    color: palette(brand, tertiary);
+    font-size: 29px;
+    line-height: 1.24;
+    display: inline-block;
+    width: 100%;
+
+    &:not(:first-of-type) {
+      margin-top: 30px;
+    }
+  }
+
+  h3{
+    color: palette(brand, primary-light);
+    font-size: 28px;
+    line-height: 1.33;
+    display: inline-block;
+    width: 100%;
+
+    &:not(:first-of-type) {
+      margin-top: 20px;
+    }
+  }
+
+  h4{
+    color: palette(brand, primary);
+    font-size: 16px;
+    line-height: 1.33;
+    display: inline-block;
+    width: 100%;
+
+    &:not(:first-of-type) {
+      margin-top: 15px;
+    }
+
+    small{
+      text-transform: uppercase;
+      color: palette(brand, secondary);
+      font-size: 15px;
+      font-weight: 400;
+    }
+  }
+
+  ul{
+    display: inline-block;
+    width: 100%;
+    list-style: none;
+    margin: 0 0 30px;
+    padding: 0;
+
+    li{
+      position: relative;
+      padding-left: 26px;
+      line-height: 1.4;
+      margin-bottom: 16px;
+
+      &:before{
+        content: "";
+        width: 8px;
+        height: 8px;
+        background-color: palette(brand, highlight);
+        display: inline-block;
+        position: absolute;
+        top: 5px;
+        left: 0;
+        border-radius: 50%;
+      }
+    }
+  }
+
+  .button{
+    margin-bottom: 20px;
+  }
+
+  .widget_widget_button{
+    width: 100%;
+  }
+
+
+
+}
+
+blockquote{
+  border-left: 4px solid #eee;
+  padding: 5px 0 5px 20px;
+  font-size: 20px;
+  margin: 20px 0;
+
+  &, p{
+    font-size: 22px;
+    font-style: italic;
+    font-weight: 100;
+  }
+}
+
+ol {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+
+  li {
+    counter-increment: step-counter;
+    margin-bottom: 10px;
+
+    &:before {
+      content: counter(step-counter)".";
+      margin-right: 5px;
+      color: palette(brand, tertiary);
+      font-weight: bold;
+    }
+  }
+}

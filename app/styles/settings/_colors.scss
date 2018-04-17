@@ -1,0 +1,45 @@
+﻿$palettes: (
+    grey: (
+        black: #000,
+        heavy: #222,
+        dark: #666,
+        base: #888,
+        light: #c5cad0,
+        clean: #eee,
+        ice: #f5f5f5,
+        white: #fff,
+    ),
+    brand: (
+        primary: #333, //Principal
+        primary-light: #3a5e94,
+        secondary: #19aebf, //Alternativa
+        accent: #1dca65, //Destaque com a cor principal
+        contrast: #1def6f, //Contraste com a cor principal
+        highlight: #18cedc, //Destaque
+    ),
+    text: (
+        primary: #2e2f77,
+        primary-contrast: #fff,
+        default: #454a51,
+        light: #a9c0c3,
+        ice: #c5d9dc,
+        dark: #2c2d31
+    ),
+    border: (
+        default: #BDBDBD,
+        light: #ddd,
+        clean: #eee,
+        dark: #222
+    ),
+    stage: (
+        success: #1dca65,
+        danger: #c82d2d,
+        alert: #d29f2c,
+        warning: #e2821b,
+        info: #2cbbd2,
+    )
+);
+
+
+// Colors Variables
+$bg-body: #eaecec;

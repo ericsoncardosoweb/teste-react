@@ -1,0 +1,24 @@
+/* Header */
+.header{
+  background: palette(brand, primary);
+  color: #FFF;
+  text-align: center;
+  padding: 5px 0;
+
+  @include linkreset();
+
+  nav{
+    font-size: em(18);
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1;
+
+    a{
+      padding: rem(10px);
+      display: block;
+    }
+  }
+
+
+
+}
