@@ -69,10 +69,26 @@ class Home extends React.Component {
     let _items = this.state.houses;
     let search = this.state.searchString.trim().toLowerCase();
 
+    function test(str, substring) {
+      var arr_str = str.toLowerCase().split('');
+      var arr_substr = substring.toLowerCase().split('');
+
+      return arr_substr.filter(function (each) {
+        return arr_str.indexOf(each) === -1;
+      }).length === 0;
+    }
+
 
     if (search.length > 0) {
       _items = _items.filter(function (item) {
-        return item.home.toLowerCase().match(search);
+        let str = item.home.toLowerCase();
+        let strSarch = search;
+
+        if (test(str, strSarch)) {
+          return str;
+        }
+       
+        // return str.match(search);
       });
     }
 
