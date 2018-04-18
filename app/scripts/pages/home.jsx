@@ -84,9 +84,17 @@ class Home extends React.Component {
         let str = item.home.toLowerCase();
         let strSarch = search;
 
-        if (test(str, strSarch)) {
-          return str;
+        // console.log(str.match(search));
+
+        if (str.match(search) != null) {
+          return str.match(search);
+        } else {
+          if (test(str, strSarch)) {
+            return str;
+          }
+
         }
+
        
         // return str.match(search);
       });
